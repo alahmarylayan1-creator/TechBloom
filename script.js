@@ -96,6 +96,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 solution: "يجعل النظام تحويل المواد أسهل وأكثر أمانًا.",
                 fullDesc: "منصة موحدة لتحويل المواد والساعات الأكاديمية بين الجامعات. يمكن استخدام تقنية Blockchain للتحقق من السجلات الأكاديمية بأمان وتسهيل عملية التحويل."
             }
+        },
+        "07": {
+            en: {
+                title: "AI Interactive Educational Stories",
+                summary: "Transforming curriculum lessons into voice-enabled interactive story adventures.",
+                problem: "Children and young students often find traditional curriculum textbooks unengaging, making it hard to sustain focus and deeply connect with foundational educational concepts.",
+                solution: "We propose an interactive web platform that turns lessons into voice-enabled branching stories where children learn through play and conversation.",
+                fullDesc: "Our project is to develop an interactive web platform that transforms standard curriculum lessons into voice-enabled, branching story adventures. Children can star in the stories, interact using speech recognition, and engage with adaptive educational challenges that reinforce core concepts naturally and enjoyably."
+            },
+            ar: {
+                title: "القصص التعليمية التفاعلية بالذكاء الاصطناعي",
+                summary: "تحويل دروس المنهج إلى قصص ومغامرات تفاعلية بالصوت والذكاء الاصطناعي.",
+                problem: "يجد الأطفال والطلاب الصغار نصوص المناهج التقليدية غير جذابة، مما يجعل الحفاظ على التركيز والتفاعل العميق مع المفاهيم التعليمية الأساسية أمراً صعباً.",
+                solution: "نطرح منصة ويب تفاعلية تحول الدروس إلى قصص سردية متفرعة بالصوت، حيث يتعلم الأطفال من خلال اللعب والمحادثة.",
+                fullDesc: "فكرتنا هي تطوير منصة ويب تفاعلية تحول دروس المنهج الدراسي القياسية إلى مغامرات قصصية متفرعة ومدعومة بالصوت. يمكن للأطفال تقمص أدوار الشخصيات في القصص، والتفاعل صوتياً عبر التعرف على الكلام، وخوض تحديات تعليمية تكيفية ترسّخ المفاهيم الأساسية بطريقة ممتعة وطبيعية."
+            }
         }
     };
 
@@ -139,12 +155,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    langToggleBtn.addEventListener('click', toggleLanguage);
+    if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', toggleLanguage);
+    }
 
     function populateModalContent(projectId) {
         const data = projectsData[projectId][currentLang];
         const cardElem = document.querySelector(`.project-card[data-id="${projectId}"]`);
-        const iconHtml = cardElem.querySelector('.card-icon').innerHTML;
+        const iconHtml = cardElem ? cardElem.querySelector('.card-icon').innerHTML : '';
 
         const problemLabel = currentLang === 'ar' ? 'المشكلة' : 'Problem';
         const solutionLabel = currentLang === 'ar' ? 'الحل' : 'Solution';
@@ -222,7 +240,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    modalOverlay.addEventListener('click', closeCardModal);
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', closeCardModal);
+    }
 
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && expandedContainer.classList.contains('active')) {
