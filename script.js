@@ -3,34 +3,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectsData = {
         "01": {
             en: {
-                title: "Beauty & Care",
-                summary: "AI-powered skincare and beauty recommendations made personal and simple.",
-                problem: "There are a large number of beauty and care products available, which makes it difficult for users to know which products are suitable for them. Users often depend on other people's experiences or search through multiple sources.",
-                solution: "We propose a single intelligent platform that uses AI to analyze the user's needs and provide personalized recommendations instead of relying on random searches.",
-                fullDesc: "Our project is to develop an AI-powered beauty and care platform that helps users choose suitable skincare, haircare, and beauty products based on their individual needs. The user can provide information about their needs or upload an image, and the system analyzes the input and provides personalized recommendations, such as suitable products and care routines. The system can also suggest suitable colors and styling options for clothing or makeup."
+                title: "AI Service Bottleneck Analyzer",
+                summary: "AI-powered operations system optimizing workflow bottlenecks and service requests.",
+                problem: "Long procedures, manual entries, delays, errors, and decision-making bottlenecks in government and organizational service journeys.",
+                solution: "We propose an AI-powered system that analyzes service journeys (request $\\rightarrow$ verification $\\rightarrow$ review $\\rightarrow$ approval $\\rightarrow$ execution) to detect bottlenecks and automate checks.",
+                fullDesc: "Designed to tackle administrative and human resource workflow challenges, this system analyzes complete service journeys. It identifies the exact stages causing major delays (such as document verification with average multi-day lags and high rejection rates), tracks operational bottlenecks, and proactively suggests automated validations before request submission."
             },
             ar: {
-                title: "الجمال والعناية",
-                summary: "توصيات ذكية للعناية بالبشرة والجمال بطريقة شخصية وبسيطة.",
-                problem: "يوجد عدد كبير جدًا من منتجات العناية والجمال، وقد يجد المستخدم صعوبة في معرفة المنتجات المناسبة له، وغالبًا يعتمد على تجارب الآخرين أو البحث في مصادر متعددة.",
-                solution: "نقدم منصة واحدة تستخدم الذكاء الاصطناعي لتحليل احتياجات المستخدم وتقديم توصيات شخصية بدلًا من الاعتماد على البحث العشوائي.",
-                fullDesc: "فكرتنا هي تطوير منصة ذكية تعتمد على الذكاء الاصطناعي تساعد المستخدم في اختيار المنتجات والروتين المناسب للعناية بالبشرة والشعر والمظهر بشكل عام. يدخل المستخدم معلومات عن احتياجاته أو يرفع صورة، ويقوم النظام بتحليلها وتقديم اقتراحات مناسبة له، مثل المنتجات التي يمكن استخدامها، خطوات روتين العناية، وأفضل الخيارات التي تناسب حالته. كما يمكن أن يساعد النظام في اختيار الألوان والتنسيقات المناسبة للمظهر، مثل ألوان الملابس أو المكياج."
+                title: "محلل اختناقات الخدمات بالذكاء الاصطناعي",
+                summary: "نظام عمليات مدعوم بالذكاء الاصطناعي لتحليل وعلاج الاختناقات في رحلات الخدمات.",
+                problem: "الإجراءات الطويلة، التدخل اليدوي، التأخير، الأخطاء، وصعوبة اتخاذ القرار في رحلات المستفيدين داخل الجهات والخدمات الإدارية.",
+                solution: "نطرح نظاماً ذكياً يحلل رحلة الخدمة (طلب $\\rightarrow$ تحقيق $\\rightarrow$ مراجعة $\\rightarrow$ موافقة $\\rightarrow$ تنفيذ) ليكتشف المراحل التي تسبب أكبر تأخير ويقترح حلولاً استباقية.",
+                fullDesc: "صُمم هذا النظام خصيصاً لمعالجة التحديات التشغيلية في القطاعات الإدارية، حيث يقوم بتحليل رحلة المستفيد بالكامل. يحدد النظام بدقة مرحلة التأخير الكبرى (مثل التحقق من المستندات التي تستغرق أياماً وارتفاع نسب المرتجعات)، ويقترح حلولاً مثل الأتمتة المسبقة لتقليل الأخطاء وتسريع إنجاز العمليات."
             }
         },
         "02": {
             en: {
-                title: "Biomarker Lifestyle System",
-                summary: "Turning complex blood test reports into clear lifestyle insights.",
-                problem: "Many people may find blood test reports difficult to understand, especially when the report contains many different measurements and indicators.",
-                solution: "We propose an AI-powered platform that converts blood test results into understandable information and provides personalized general lifestyle recommendations.",
-                fullDesc: "Our project is to develop an intelligent system that helps users understand their blood test results in a simpler way. Users can upload their blood test report as a PDF or image. The system extracts and analyzes important values, such as vitamin or iron levels, and provides general lifestyle and nutrition recommendations based on the results."
+                title: "The Intent-Aware Shopping Mall",
+                summary: "A smart mall navigation and generative AI shopping assistant that curates complete itineraries.",
+                problem: "Traditional mall navigation only points to stores, leaving visitors overwhelmed without knowing which stores match their specific time limits, preferences, or goals.",
+                solution: "We propose an intelligent system that combines indoor navigation, recommendation algorithms, and generative AI to plan custom shopping trips based on natural intent.",
+                fullDesc: "More than standard mall navigation, this system understands your exact constraints and goals. If a user inputs 'I have 1.5 hours' or expresses natural shopping intent like 'I want to buy a gift for my 25-year-old sister with a 300 SAR budget,' the system analyzes stores, products, promotions, wait times, and distances to instantly build a personalized 90-minute journey and schedule."
             },
             ar: {
-                title: "نظام نمط الحياة المعتمد على المؤشرات الحيوية",
-                summary: "تحويل تقارير تحاليل الدم المعقدة إلى إرشادات واضحة.",
-                problem: "قد يجد بعض الأشخاص صعوبة في فهم نتائج تحاليل الدم ومعرفة معنى القيم المرتفعة أو المنخفضة، خصوصًا عند وجود العديد من المؤشرات في التقرير.",
-                solution: "نطور منصة تستخدم الذكاء الاصطناعي لتحويل نتائج التحليل إلى معلومات واضحة وتوصيات عامة ومخصصة للمستخدم.",
-                fullDesc: "فكرتنا هي تطوير نظام ذكي يساعد المستخدم على فهم نتائج تحاليل الدم بطريقة أبسط. يستطيع المستخدم رفع تقرير التحليل بصيغة PDF أو صورة، ويقوم النظام باستخراج البيانات المهمة من التقرير وتحليل القيم، مثل الفيتامينات أو الحديد وغيرها، ثم يقدم توصيات عامة لنمط الحياة والتغذية بناءً على النتائج."
+                title: "المول الذي يتوقع ما تبغين",
+                summary: "نظام ملاحة ذكي ومساعد تسوق توليدي يخطط لك رحلة التسوق المتكاملة.",
+                problem: "تطبيقات الملاحة التقليدية للمولات تقتصر على البحث عن متجر معين، ولا تساعد الزائر في معرفة الأماكن المناسبة له بناءً على وقته أو هدفه المحدود.",
+                solution: "نقدم نظاماً ذكياً يدمج التنقل الداخلي، خوارزميات التوصية، والذكاء الاصطناعي التوليدي لتخطيط جولة متكاملة بناءً على نية التسوق الطبيعية للمستخدم.",
+                fullDesc: "يتجاوز هذا النظام فكرة البحث العادي عن المتاجر؛ فعندما تدخلين المول وتقولين لديك ساعة ونصف، أو تعبرين بطبيعية مثل 'أبغى أشتري هدية لأختي عمرها 25 وميزانيتي 300 ريال'، يقوم النظام بدمج المتاجر، المنتجات، العروض، وقت الانتظار، والمسافات ليقترح عليك أفضل الأماكن ويخطط لك رحلة تسوق متكاملة تضمن استغلال وقتك بأفضل شكل."
             }
         },
         "03": {
@@ -51,18 +51,18 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         "04": {
             en: {
-                title: "Smart University Assistant & AI Advisor",
-                summary: "Unified AI assistant for campus info and intelligent degree planning.",
-                problem: "Students often need to search through multiple sources to find university information. Planning courses, understanding prerequisites, and knowing how academic decisions may affect graduation can also be difficult.",
-                solution: "We propose a single platform that uses AI and a university database to provide both university information and personalized academic guidance.",
-                fullDesc: "Our project is to develop a smart university assistant that combines an AI university assistant and an academic advisor in one platform. Students can ask the system questions about university information, such as classroom locations, registration dates, course prerequisites, and academic regulations. At the same time, the system can analyze the student's academic data, such as completed courses, GPA, remaining credits, and study plan. It can then help the student select suitable courses and show how different choices may affect their study plan and expected graduation date."
+                title: "Smart Itinerary & Indoor Routing System",
+                summary: "Advanced graph theory routing and time optimization for entertainment destinations.",
+                problem: "Visitors inside large enclosed entertainment destinations (such as City Walk) face severe navigation difficulties and inefficient time management.",
+                solution: "We propose a smart application that computes optimal routes and step-by-step itineraries based on user time limits and selected points of interest.",
+                fullDesc: "Our project develops an intelligent routing system using advanced graph theory and the Traveling Salesperson Problem (TSP) algorithms. Visitors select the areas and attractions they wish to visit along with their available total time, and the application automatically calculates the ideal sequence to maximize efficiency, avoid congestion, and deliver a personalized tourist experience without complex hardware sensors."
             },
             ar: {
-                title: "المساعد الجامعي الذكي والمرشد الأكاديمي",
-                summary: "مساعد ذكي موحد لمعلومات الحرم الجامعي والتخطيط الأكاديمي.",
-                problem: "الطالبة تحتاج إلى البحث في أكثر من مصدر للحصول على المعلومات الجامعية، كما أن التخطيط للمواد ومعرفة المتطلبات وتأثير التسجيل أو التأجيل على التخرج قد يكون صعبًا.",
-                solution: "نوفر منصة واحدة تعتمد على الذكاء الاصطناعي وقاعدة بيانات الجامعة، بحيث تعمل كمساعد للمعلومات الجامعية ومرشد أكاديمي في نفس الوقت.",
-                fullDesc: "فكرتنا هي تطوير مساعد جامعي ذكي يجمع بين المساعد الجامعي والمرشد الأكاديمي في منصة واحدة. تستطيع الطالبة التحدث مع النظام وطرح أسئلة عن الجامعة، مثل مواقع القاعات، مواعيد التسجيل، متطلبات المواد، واللوائح الأكاديمية. وفي نفس الوقت، يستطيع النظام تحليل البيانات الأكاديمية للطالبة، مثل المواد التي اجتازتها، المعدل، الساعات المتبقية، والخطة الدراسية، ثم يساعدها في اختيار المواد المناسبة ويبين لها تأثير قراراتها على خطتها وموعد تخرجها."
+                title: "نظام الملاحة الذكي وتخطيط المسارات",
+                summary: "تحسين الوقت وتخطيط المسارات باستخدام خوارزميات المخططات البيانية للوجهات الترفيهية.",
+                problem: "يواجه الزوار داخل الوجهات الترفيهية الكبرى المغلقة (مثل سيتي ووك) صعوبة في التنقل وإدارة الوقت واختيار الأماكن المناسبة.",
+                solution: "نطرح تطبيقاً ذكياً يحسب المسار الأمثل وترتيب الزيارات تلقائياً بناءً على الوقت الإجمالي المتاح ونقاط الاهتمام المختارة.",
+                fullDesc: "يهدف هذا المشروع إلى تطوير تطبيق ذكي يحل مشكلة صعوبة التنقل للزوار. يتيح النظام اختيار نقاط الاهتمام وتحديد الوقت المتاح، ثم يقوم تلقائياً بحساب المسار وترتيب الزيارات خطوة بخطوة باستخدام خوارزميات المخططات البيانية المتقدمة (Graph Theory & Traveling Salesperson Problem)، مما يضمن استغلال الوقت بكفاءة عالية وتجنب الازدحام دون الحاجة لحساسات معقدة."
             }
         },
         "05": {
