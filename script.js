@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Project Dataset matching the refined human wording
+    // Project Dataset containing original cards + the new ones replacing 01, 02, 04, 06
     const projectsData = {
         "01": {
             en: {
                 title: "AI Service Bottleneck Analyzer",
                 summary: "AI-powered operations system optimizing workflow bottlenecks and service requests.",
                 problem: "Long procedures, manual entries, delays, errors, and decision-making bottlenecks in government and organizational service journeys.",
-                solution: "We propose an AI-powered system that analyzes service journeys (request $\\rightarrow$ verification $\\rightarrow$ review $\\rightarrow$ approval $\\rightarrow$ execution) to detect bottlenecks and automate checks.",
+                solution: "We propose an AI-powered system that analyzes service journeys (request -> verification -> review -> approval -> execution) to detect bottlenecks and automate checks.",
                 fullDesc: "Designed to tackle administrative and human resource workflow challenges, this system analyzes complete service journeys. It identifies the exact stages causing major delays (such as document verification with average multi-day lags and high rejection rates), tracks operational bottlenecks, and proactively suggests automated validations before request submission."
             },
             ar: {
                 title: "محلل اختناقات الخدمات بالذكاء الاصطناعي",
                 summary: "نظام عمليات مدعوم بالذكاء الاصطناعي لتحليل وعلاج الاختناقات في رحلات الخدمات.",
                 problem: "الإجراءات الطويلة، التدخل اليدوي، التأخير، الأخطاء، وصعوبة اتخاذ القرار في رحلات المستفيدين داخل الجهات والخدمات الإدارية.",
-                solution: "نطرح نظاماً ذكياً يحلل رحلة الخدمة (طلب $\\rightarrow$ تحقيق $\\rightarrow$ مراجعة $\\rightarrow$ موافقة $\\rightarrow$ تنفيذ) ليكتشف المراحل التي تسبب أكبر تأخير ويقترح حلولاً استباقية.",
+                solution: "نطرح نظاماً ذكياً يحلل رحلة الخدمة (طلب -> تحقيق -> مراجعة -> موافقة -> تنفيذ) ليكتشف المراحل التي تسبب أكبر تأخير ويقترح حلولاً استباقية.",
                 fullDesc: "صُمم هذا النظام خصيصاً لمعالجة التحديات التشغيلية في القطاعات الإدارية، حيث يقوم بتحليل رحلة المستفيد بالكامل. يحدد النظام بدقة مرحلة التأخير الكبرى (مثل التحقق من المستندات التي تستغرق أياماً وارتفاع نسب المرتجعات)، ويقترح حلولاً مثل الأتمتة المسبقة لتقليل الأخطاء وتسريع إنجاز العمليات."
             }
         },
@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 fullDesc: "Our project develops an intelligent routing system using advanced graph theory and the Traveling Salesperson Problem (TSP) algorithms. Visitors select the areas and attractions they wish to visit along with their available total time, and the application automatically calculates the ideal sequence to maximize efficiency, avoid congestion, and deliver a personalized tourist experience without complex hardware sensors."
             },
             ar: {
-                title: "نظام الملاحة الذكي وتخطيط المسارات",
+                title: "نظام الملاحة الذكي وتخطيط المسارات السياحية",
                 summary: "تحسين الوقت وتخطيط المسارات باستخدام خوارزميات المخططات البيانية للوجهات الترفيهية.",
                 problem: "يواجه الزوار داخل الوجهات الترفيهية الكبرى المغلقة (مثل سيتي ووك) صعوبة في التنقل وإدارة الوقت واختيار الأماكن المناسبة.",
                 solution: "نطرح تطبيقاً ذكياً يحسب المسار الأمثل وترتيب الزيارات تلقائياً بناءً على الوقت الإجمالي المتاح ونقاط الاهتمام المختارة.",
-                fullDesc: "يهدف هذا المشروع إلى تطوير تطبيق ذكي يحل مشكلة صعوبة التنقل للزوار. يتيح النظام اختيار نقاط الاهتمام وتحديد الوقت المتاح، ثم يقوم تلقائياً بحساب المسار وترتيب الزيارات خطوة بخطوة باستخدام خوارزميات المخططات البيانية المتقدمة (Graph Theory & Traveling Salesperson Problem)، مما يضمن استغلال الوقت بكفاءة عالية وتجنب الازدحام دون الحاجة لحساسات معقدة."
+                fullDesc: "يهدف هذا المشروع إلى تطوير تطبيق ذكي يحل مشكلة صعوبة التنقل وإدارة الوقت للزوار داخل الوجهات الترفيهية الكبرى المغلقة في مدينة جدة (مثل سيتي ووك). يتيح النظام للزائر إمكانية اختيار نقاط الاهتمام والمناطق التي يرغب بزيارتها، مع تحديد إجمالي الوقت المتاح لديه. وبناءً على ذلك، يقوم التطبيق تلقائياً بحساب المسار الأمثل وترتيب الزيارات خطوة بخطوة باستخدام خوارزميات المخططات البيانية المتقدمة (Graph Theory & Traveling Salesperson Problem)، مما يضمن استغلال الوقت بأقصى كفاءة، وتجنب الازدحام، وتقديم تجربة سياحية فريدة ومخصصة بالكامل بدون الحاجة لأي أجهزة أو حساسات معقدة."
             }
         },
         "05": {
@@ -83,18 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         "06": {
             en: {
-                title: "Credit Transfer Hub",
-                summary: "Making university course and credit transfers secure and straightforward.",
-                problem: "Transferring courses between universities can be difficult.",
-                solution: "The system makes course transfer easier and safer.",
-                fullDesc: "A unified platform for transferring academic courses and credits between universities. Blockchain technology can be used to securely verify academic records and make the transfer process easier."
+                title: "Smart Campus Lost & Found Hub",
+                summary: "AI-powered image matching and smart lockers for campus lost items.",
+                problem: "Students frequently lose items on campus, and traditional lost-and-found processes lack efficient tracking or image matching.",
+                solution: "We propose an AI-driven platform that matches lost items with found reports automatically.",
+                fullDesc: "A smart hub utilizing computer vision and image description matching to easily connect students with their lost belongings across university buildings and facilities."
             },
             ar: {
-                title: "منصة تحويل الساعات",
-                summary: "تسهيل وتأمين إجراءات تحويل المواد والساعات بين الجامعات.",
-                problem: "تحويل المواد بين الجامعات قد يكون صعبًا.",
-                solution: "يجعل النظام تحويل المواد أسهل وأكثر أمانًا.",
-                fullDesc: "منصة موحدة لتحويل المواد والساعات الأكاديمية بين الجامعات. يمكن استخدام تقنية Blockchain للتحقق من السجلات الأكاديمية بأمان وتسهيل عملية التحويل."
+                title: "منصة المفقودات الجامعية الذكية",
+                summary: "مطابقة بالذكاء الاصطناعي وخزائن ذكية لإدارة المفقودات في الحرم الجامعي.",
+                problem: "يفقد الطلاب أمتعتهم بشكل متكرر داخل الحرم الجامعي، وتفتقر الطرق التقليدية للمفقودات إلى تتبع فعال أو مطابقة دقيقة للصور.",
+                solution: "نقترح منصة مدعومة بالذكاء الاصطناعي تقوم بمطابقة المفقودات مع بلاغات العثور عليها تلقائياً.",
+                fullDesc: "منصة ذكية تستخدم تقنيات الرؤية الحاسوبية ومطابقة أوصاف الصور لتسهيل وصول الطلاب إلى مقتنياتهم المفقودة عبر مباني المرافق الجامعية المختلفة."
             }
         },
         "07": {
